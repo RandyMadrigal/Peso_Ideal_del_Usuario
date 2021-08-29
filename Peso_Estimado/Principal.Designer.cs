@@ -168,7 +168,7 @@ namespace Peso_Estimado
             this.picturePrincipal.Location = new System.Drawing.Point(0, 0);
             this.picturePrincipal.Name = "picturePrincipal";
             this.picturePrincipal.Size = new System.Drawing.Size(645, 450);
-            this.picturePrincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picturePrincipal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePrincipal.TabIndex = 0;
             this.picturePrincipal.TabStop = false;
             // 
