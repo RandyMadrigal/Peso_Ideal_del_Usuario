@@ -46,6 +46,8 @@ namespace Peso_Estimado
             this.pictureApellido = new System.Windows.Forms.PictureBox();
             this.pictureSexo = new System.Windows.Forms.PictureBox();
             this.pictureEdad = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtLibras = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureNombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureApellido)).BeginInit();
@@ -205,12 +207,31 @@ namespace Peso_Estimado
             this.pictureEdad.TabIndex = 15;
             this.pictureEdad.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(369, 175);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(136, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Peso en libras ideal";
+            // 
+            // txtLibras
+            // 
+            this.txtLibras.Location = new System.Drawing.Point(369, 201);
+            this.txtLibras.Name = "txtLibras";
+            this.txtLibras.Size = new System.Drawing.Size(134, 27);
+            this.txtLibras.TabIndex = 17;
+            // 
             // VentanaCalculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(594, 397);
+            this.Controls.Add(this.txtLibras);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureEdad);
             this.Controls.Add(this.pictureSexo);
             this.Controls.Add(this.pictureApellido);
@@ -260,5 +281,7 @@ namespace Peso_Estimado
         private System.Windows.Forms.PictureBox pictureApellido;
         private System.Windows.Forms.PictureBox pictureSexo;
         private System.Windows.Forms.PictureBox pictureEdad;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtLibras;
     }
 }

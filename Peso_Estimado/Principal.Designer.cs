@@ -48,6 +48,7 @@ namespace Peso_Estimado
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.White;
+            this.PanelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelMenu.Controls.Add(this.panel1);
             this.PanelMenu.Controls.Add(this.btnmenu);
             this.PanelMenu.Controls.Add(this.LogoPicture);
@@ -65,7 +66,7 @@ namespace Peso_Estimado
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 107);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(155, 90);
+            this.panel1.Size = new System.Drawing.Size(153, 90);
             this.panel1.TabIndex = 2;
             // 
             // btnayuda
@@ -80,7 +81,7 @@ namespace Peso_Estimado
             this.btnayuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnayuda.Location = new System.Drawing.Point(0, 58);
             this.btnayuda.Name = "btnayuda";
-            this.btnayuda.Size = new System.Drawing.Size(155, 32);
+            this.btnayuda.Size = new System.Drawing.Size(153, 32);
             this.btnayuda.TabIndex = 4;
             this.btnayuda.Text = "Ayuda";
             this.btnayuda.UseVisualStyleBackColor = false;
@@ -98,7 +99,7 @@ namespace Peso_Estimado
             this.btntabla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btntabla.Location = new System.Drawing.Point(0, 29);
             this.btntabla.Name = "btntabla";
-            this.btntabla.Size = new System.Drawing.Size(155, 29);
+            this.btntabla.Size = new System.Drawing.Size(153, 29);
             this.btntabla.TabIndex = 3;
             this.btntabla.Text = "Ver tabla";
             this.btntabla.UseVisualStyleBackColor = false;
@@ -116,7 +117,7 @@ namespace Peso_Estimado
             this.btncalcular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncalcular.Location = new System.Drawing.Point(0, 0);
             this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(155, 29);
+            this.btncalcular.Size = new System.Drawing.Size(153, 29);
             this.btncalcular.TabIndex = 2;
             this.btncalcular.Text = "Calcular";
             this.btncalcular.UseVisualStyleBackColor = false;
@@ -135,7 +136,7 @@ namespace Peso_Estimado
             this.btnmenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnmenu.Location = new System.Drawing.Point(0, 78);
             this.btnmenu.Name = "btnmenu";
-            this.btnmenu.Size = new System.Drawing.Size(155, 29);
+            this.btnmenu.Size = new System.Drawing.Size(153, 29);
             this.btnmenu.TabIndex = 1;
             this.btnmenu.Text = "Menu";
             this.btnmenu.UseVisualStyleBackColor = false;
@@ -147,7 +148,7 @@ namespace Peso_Estimado
             this.LogoPicture.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogoPicture.Location = new System.Drawing.Point(0, 0);
             this.LogoPicture.Name = "LogoPicture";
-            this.LogoPicture.Size = new System.Drawing.Size(155, 78);
+            this.LogoPicture.Size = new System.Drawing.Size(153, 78);
             this.LogoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.LogoPicture.TabIndex = 0;
             this.LogoPicture.TabStop = false;
@@ -182,6 +183,7 @@ namespace Peso_Estimado
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Principal";
             this.Text = "Peso Ideal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
             this.PanelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPicture)).EndInit();

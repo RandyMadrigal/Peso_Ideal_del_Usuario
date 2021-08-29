@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -29,6 +23,9 @@ namespace Peso_Estimado
                 op.PULGADA = (double.Parse(txtAltura.Text));
 
                 txtResultado.Text = op.Promedio(op.PULGADA);
+
+                txtLibras.Text = op.DeterminarPeso(double.Parse(txtAltura.Text)).ToString();
+
             }
             catch (Exception ex)
             {
@@ -44,7 +41,6 @@ namespace Peso_Estimado
             pictureApellido.Image = Image.FromFile(@"Picture/avatar.gif");
             pictureEdad.Image = Image.FromFile(@"Picture/avatar.gif");
             pictureSexo.Image = Image.FromFile(@"Picture/avatar.gif");
-
         }
     }
 }

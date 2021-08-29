@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Peso_Estimado
 {
@@ -12,7 +8,7 @@ namespace Peso_Estimado
         
         private double Centimetro; //pulgada
 
-        private double numero = 100;
+        private double numero = 100; //Constante
 
         private double kilo;
 
@@ -45,7 +41,7 @@ namespace Peso_Estimado
 
             resultado = kilo * 2.205;
 
-            return resultado;
+            return Math.Round(resultado,2);
         }
 
         public string Promedio(double pulgada)
